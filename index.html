@@ -3,72 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zulu Trust Labs | UniFi Networking & Cybersecurity</title>
+  <title>Zulu Trust Labs | UniFi & Cybersecurity</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    .logo-glow { filter: drop-shadow(0 0 15px rgb(16 185 129)); }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
   <!-- Navbar -->
-  <nav class="bg-black border-b border-zinc-800">
+  <nav class="bg-black border-b border-zinc-800 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
       <div class="flex items-center gap-3">
-        <img src="YOUR-LOGO-URL-HERE" alt="Zulu Trust Labs" class="h-10 logo-glow">
-        <span class="text-2xl font-bold">Zulu Trust Labs</span>
+        <span class="text-3xl">🛡️</span>
+        <span class="text-2xl font-bold tracking-tight">Zulu Trust Labs</span>
       </div>
-      <div class="space-x-8 text-sm">
-        <a href="#" class="hover:text-emerald-400">Services</a>
-        <a href="#" class="hover:text-emerald-400">UniFi Solutions</a>
-        <a href="#" class="hover:text-emerald-400">About</a>
-        <a href="#" class="hover:text-emerald-400">Contact</a>
+      <div class="space-x-8">
+        <a href="#" class="hover:text-emerald-400 transition">Services</a>
+        <a href="#" class="hover:text-emerald-400 transition">UniFi</a>
+        <a href="#" class="hover:text-emerald-400 transition">Smart Home</a>
+        <a href="#" class="hover:text-emerald-400 transition">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="bg-gradient-to-br from-zinc-900 to-black py-28 text-center">
+  <header class="bg-gradient-to-br from-zinc-900 to-black py-32 text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-6xl font-bold mb-6">Secure Networks.<br>Built Different.</h1>
-      <p class="text-2xl text-emerald-400 mb-10">SOHO Networking • Cybersecurity • Smart Home</p>
-      <p class="text-xl mb-12">UniFi experts who actually make it work.</p>
-      <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 px-10 py-5 rounded-2xl text-lg font-semibold inline-block">
+      <h1 class="text-6xl font-bold mb-6">Secure Networks.<br><span class="text-emerald-400">Built Different.</span></h1>
+      <p class="text-2xl mb-4">SOHO Networking • Cybersecurity • Smart Home</p>
+      <p class="text-xl text-zinc-400 mb-12">UniFi experts who make it actually work.</p>
+      <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 px-10 py-5 rounded-2xl text-lg font-semibold inline-block transition">
         Get Your Network Zulu-fied →
       </a>
     </div>
   </header>
 
   <!-- Services -->
-  <section class="py-20 bg-zinc-900">
+  <section class="py-24 bg-zinc-900">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center mb-16">What We Do</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all">
           <i class="fa-solid fa-network-wired text-5xl text-emerald-400 mb-6"></i>
           <h3 class="text-2xl font-semibold mb-3">UniFi Networking</h3>
-          <p>Enterprise-grade setups for homes and small offices that are actually reliable.</p>
+          <p class="text-zinc-400">Enterprise-grade setups for homes and small offices that are reliable and easy to manage.</p>
         </div>
-        <div class="bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition">
+        <div class="bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all">
           <i class="fa-solid fa-shield-halved text-5xl text-emerald-400 mb-6"></i>
           <h3 class="text-2xl font-semibold mb-3">Cybersecurity</h3>
-          <p>Proper protection without the corporate headaches.</p>
+          <p class="text-zinc-400">Proper protection without the corporate headaches or overkill.</p>
         </div>
-        <div class="bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition">
+        <div class="bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all">
           <i class="fa-solid fa-home text-5xl text-emerald-400 mb-6"></i>
           <h3 class="text-2xl font-semibold mb-3">Smart Home</h3>
-          <p>Automation that works and respects your privacy.</p>
+          <p class="text-zinc-400">Seamless automation that actually works and respects your privacy.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Final CTA -->
+  <!-- CTA -->
   <section id="contact" class="py-24 text-center bg-black">
     <h2 class="text-5xl font-bold mb-6">Ready to level up your network?</h2>
-    <p class="text-xl mb-10">Let's talk UniFi.</p>
-    <a href="mailto:your@email.com" class="bg-white text-black px-10 py-5 rounded-2xl font-semibold text-lg">Contact Us Now</a>
+    <p class="text-xl text-zinc-400 mb-10">Let's talk UniFi.</p>
+    <a href="mailto:your@email.com" class="bg-white text-black px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-zinc-200 transition">
+      Contact Us Now
+    </a>
   </section>
 </body>
 </html>
