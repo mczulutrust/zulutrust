@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zulu Trust Labs LLC | Networking, Cybersecurity, Smart Home & Virtualization</title>
   
-  <!-- Open Graph for Link Previews -->
   <meta property="og:title" content="Zulu Trust Labs LLC">
   <meta property="og:description" content="SOHO Networking • Cybersecurity • Smart Home • Virtualization | Veteran Owned">
   <meta property="og:image" content="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogo.jpg">
@@ -20,18 +19,17 @@
   <!-- Navbar -->
   <nav class="bg-black border-b border-zinc-800 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogoNoName.jpg"
-               alt="Zulu Trust Labs" 
-               class="h-14 md:h-20 w-auto max-h-20 object-contain">
-        </a>
-      </div>
-      <div class="space-x-6 text-sm hidden md:flex">
-        <a href="networking-security.html" class="hover:text-emerald-400 transition">Networking & Cybersecurity</a>
-        <a href="smart-home-virtualization.html" class="hover:text-emerald-400 transition">Smart Home & Virtualization</a>
-        <a href="about.html" class="hover:text-emerald-400 transition">About</a>
-        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+      <a href="index.html">
+        <img src="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogoNoName.jpg"
+             alt="Zulu Trust Labs" 
+             class="h-14 md:h-20 w-auto max-h-20 object-contain">
+      </a>
+      <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none">☰</button>
+      <div id="nav-links" class="hidden md:flex space-x-6 text-sm absolute md:static top-full left-0 right-0 bg-black md:bg-transparent flex-col md:flex-row p-6 md:p-0 border-b border-zinc-800 md:border-0">
+        <a href="networking-security.html" class="hover:text-emerald-400 transition py-2 md:py-0">Networking & Cybersecurity</a>
+        <a href="smart-home-virtualization.html" class="hover:text-emerald-400 transition py-2 md:py-0">Smart Home & Virtualization</a>
+        <a href="about.html" class="hover:text-emerald-400 transition py-2 md:py-0">About</a>
+        <a href="#contact" class="hover:text-emerald-400 transition py-2 md:py-0">Contact</a>
       </div>
     </div>
   </nav>
@@ -51,42 +49,35 @@
     </div>
   </header>
 
-<!-- Services -->
-<section class="py-24 bg-zinc-900">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-16">What We Do</h2>
-    <div class="grid md:grid-cols-3 gap-10">
-      
-      <!-- Linked Networking Card -->
-      <a href="networking-security.html" class="block bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all group">
-        <i class="fa-solid fa-network-wired text-5xl text-emerald-400 mb-6"></i>
-        <h3 class="text-2xl font-semibold mb-3 group-hover:text-emerald-400">Networking</h3>
-        <p class="text-zinc-400">UniFi, Cisco, Dell, and other enterprise infrastructure experts.</p>
-      </a>
-
-      <!-- Linked Cybersecurity Card -->
-      <a href="networking-security.html" class="block bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all group">
-        <i class="fa-solid fa-shield-halved text-5xl text-emerald-400 mb-6"></i>
-        <h3 class="text-2xl font-semibold mb-3 group-hover:text-emerald-400">Cybersecurity</h3>
-        <p class="text-zinc-400">Proper protection without the corporate headaches.</p>
-      </a>
-
-      <!-- Smart Home & Virtualization -->
-      <a href="smart-home-virtualization.html" class="block bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all group">
-        <i class="fa-solid fa-server text-5xl text-emerald-400 mb-6"></i>
-        <h3 class="text-2xl font-semibold mb-3">Smart Home & Virtualization</h3>
-        <p class="text-zinc-400">Homey Pro, Home Assistant, VMware, Proxmox, Hyper-V and efficient server virtualization.</p>
-      </a>
+  <!-- Services -->
+  <section class="py-24 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">What We Do</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <a href="networking-security.html" class="block bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all group">
+          <i class="fa-solid fa-network-wired text-5xl text-emerald-400 mb-6"></i>
+          <h3 class="text-2xl font-semibold mb-3 group-hover:text-emerald-400">Networking</h3>
+          <p class="text-zinc-400">UniFi, Cisco, Dell, and other enterprise infrastructure experts.</p>
+        </a>
+        <a href="networking-security.html" class="block bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all group">
+          <i class="fa-solid fa-shield-halved text-5xl text-emerald-400 mb-6"></i>
+          <h3 class="text-2xl font-semibold mb-3 group-hover:text-emerald-400">Cybersecurity</h3>
+          <p class="text-zinc-400">Proper protection without the corporate headaches.</p>
+        </a>
+        <a href="smart-home-virtualization.html" class="block bg-zinc-800 p-10 rounded-3xl hover:bg-zinc-700 transition-all group">
+          <i class="fa-solid fa-server text-5xl text-emerald-400 mb-6"></i>
+          <h3 class="text-2xl font-semibold mb-3">Smart Home & Virtualization</h3>
+          <p class="text-zinc-400">Homey Pro, Home Assistant, VMware, Proxmox, Hyper-V and efficient server virtualization.</p>
+        </a>
+      </div>
+      <div class="text-center mt-12">
+        <p class="text-emerald-400 text-2xl mb-6">No Job too Big or Small!</p>
+        <img src="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogo.jpg"
+             alt="Zulu Trust Labs" 
+             class="mx-auto h-[32rem] max-w-xs opacity-90 border-8 border-black rounded-3xl p-3 bg-zinc-900">
+      </div>
     </div>
-    
-    <div class="text-center mt-12">
-      <p class="text-emerald-400 text-2xl mb-6">No Job too Big or Small!</p>
-      <img src="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogo.jpg"
-           alt="Zulu Trust Labs" 
-           class="mx-auto h-[32rem] max-w-xs opacity-90 border-8 border-black rounded-3xl p-3 bg-zinc-900">
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- qiAutomation Partner -->
   <section class="py-16 bg-black border-t border-b border-zinc-800">
@@ -107,7 +98,6 @@
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h2 class="text-5xl font-bold mb-6">Ready to level up your network?</h2>
       <p class="text-xl text-zinc-400 mb-8">Southport, NC • Brunswick County & Surrounding Areas</p>
-      
       <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
         <div class="bg-zinc-900 p-8 rounded-3xl">
           <h3 class="text-xl font-semibold mb-3">General Inquiries</h3>
@@ -133,5 +123,12 @@
       All rights reserved © 2026.
     </div>
   </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('hidden');
+      document.getElementById('nav-links').classList.toggle('flex');
+    });
+  </script>
 </body>
 </html>
