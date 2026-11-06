@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Networking & Cybersecurity - Zulu Trust Labs LLC</title>
   
-  <!-- Open Graph -->
   <meta property="og:title" content="Networking & Cybersecurity - Zulu Trust Labs LLC">
   <meta property="og:description" content="UniFi, Cisco, Dell, Cybersecurity, and Network Hardening Solutions">
   <meta property="og:image" content="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogo.jpg">
@@ -19,19 +18,17 @@
   <!-- Navbar -->
   <nav class="bg-black border-b border-zinc-800 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogoNoName.jpg"
-               alt="Zulu Trust Labs" 
-               class="h-14 md:h-20 w-auto max-h-20 object-contain">
-        </a>
-      </div>
-      <div class="space-x-6 text-sm">
-        <a href="index.html" class="hover:text-emerald-400 transition">Home</a>
-        <a href="networking-security.html" class="hover:text-emerald-400 transition">Networking & Cybersecurity</a>
-        <a href="smart-home-virtualization.html" class="hover:text-emerald-400 transition">Smart Home & Virtualization</a>
-        <a href="#" class="hover:text-emerald-400 transition">About Us</a>
-        <a href="index.html#contact" class="hover:text-emerald-400 transition">Contact</a>
+      <a href="index.html">
+        <img src="https://raw.githubusercontent.com/mczulutrust/zulutrust/main/ZuluTrustLabsLogoNoName.jpg"
+             alt="Zulu Trust Labs" 
+             class="h-14 md:h-20 w-auto max-h-20 object-contain">
+      </a>
+      <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none">☰</button>
+      <div id="nav-links" class="hidden md:flex space-x-6 text-sm absolute md:static top-full left-0 right-0 bg-black md:bg-transparent flex-col md:flex-row p-6 md:p-0 border-b border-zinc-800 md:border-0">
+        <a href="networking-security.html" class="hover:text-emerald-400 transition py-2 md:py-0">Networking & Cybersecurity</a>
+        <a href="smart-home-virtualization.html" class="hover:text-emerald-400 transition py-2 md:py-0">Smart Home & Virtualization</a>
+        <a href="about.html" class="hover:text-emerald-400 transition py-2 md:py-0">About</a>
+        <a href="index.html#contact" class="hover:text-emerald-400 transition py-2 md:py-0">Contact</a>
       </div>
     </div>
   </nav>
@@ -60,6 +57,7 @@
         <p class="mt-12 text-xl font-semibold">Custom Small Office Home Office (SOHO) Solutions.</p>
         <ul class="space-y-6 text-lg">
           <li><strong>No job too small</strong> — Router relocations? Weak Wifi at various spots around your business or home? Implementation of home security cameras?</li>
+        </ul>
         <p class="mt-12 text-xl font-semibold">Local Expertise. Enterprise Results.</p>
       </div>
     </div>
@@ -97,5 +95,12 @@
       All rights reserved © 2026.
     </div>
   </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('hidden');
+      document.getElementById('nav-links').classList.toggle('flex');
+    });
+  </script>
 </body>
 </html>
